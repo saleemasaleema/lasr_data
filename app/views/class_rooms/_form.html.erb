@@ -1,0 +1,38 @@
+<%= form_for(class_room) do |f| %>
+  <% if class_room.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(class_room.errors.count, "error") %> prohibited this class_room from being saved:</h2>
+
+      <ul>
+      <% class_room.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="form-group">
+  <div class="field">
+    <%= f.label :Cl_no %>
+    <%= f.number_field :Cl_no, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Cl_date %>
+    <%= f.date_select :Cl_date, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Strength %>
+    <%= f.number_field :Strength, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_id %>
+    <%= f.text_field :section_id, class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</div>
+<% end %>

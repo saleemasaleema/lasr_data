@@ -1,0 +1,1 @@
+json.partial! "takens/taken", taken: @taken

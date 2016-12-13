@@ -1,0 +1,33 @@
+<%= form_for(instructorr) do |f| %>
+  <% if instructorr.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(instructorr.errors.count, "error") %> prohibited this instructorr from being saved:</h2>
+
+      <ul>
+      <% instructorr.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div>
+  <div class="field">
+    <%= f.label :i_name %>
+    <%= f.text_field :i_name, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :i_address %>
+    <%= f.text_area :i_address, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Gender %>
+    <%= f.text_field :Gender, class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</div>
+<% end %>

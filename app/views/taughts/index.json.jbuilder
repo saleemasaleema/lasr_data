@@ -1,0 +1,1 @@
+json.array! @taughts, partial: 'taughts/taught', as: :taught

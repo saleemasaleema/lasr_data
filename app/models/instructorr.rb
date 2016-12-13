@@ -1,0 +1,2 @@
+class Instructorr < ApplicationRecord
+end

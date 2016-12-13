@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Cl_no: 1
+  Cl_date: 2016-12-13
+  Strength: 1
+  section: one
+
+two:
+  Cl_no: 1
+  Cl_date: 2016-12-13
+  Strength: 1
+  section: two

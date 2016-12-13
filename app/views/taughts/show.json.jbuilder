@@ -1,0 +1,1 @@
+json.partial! "taughts/taught", taught: @taught
